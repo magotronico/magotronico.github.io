@@ -3,74 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Hub</title>
+    <title>Car Showcase</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #333; color: #fff; padding: 10px 20px; text-align: center; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 10px; }
+        nav a { color: #fff; text-decoration: none; }
+        section { margin: 20px; padding: 20px; background-color: white; border-radius: 8px; }
+        footer { background-color: #333; color: white; text-align: center; padding: 10px 20px; position: fixed; bottom: 0; width: 100%; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #666; color: white; }
+        img { width: 100%; border-radius: 8px; }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Movie Hub!</h1>
+        <h1>Car Showcase</h1>
         <nav>
             <ul>
-                <li><a href="#new-releases">New Releases</a></li>
-                <li><a href="#classics">Classics</a></li>
-                <li><a href="#submit-movie">Submit a Movie</a></li>
+                <li><a href="#sports-cars">Sports Cars</a></li>
+                <li><a href="#suv">SUVs</a></li>
+                <li><a href="#classic-cars">Classic Cars</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="new-releases">
-        <h2>New Releases</h2>
-        <article>
-            <h3>The Marvelous Movie</h3>
-            <img src="marvelous_movie.jpg" alt="The Marvelous Movie Poster" width="200">
-            <p>This is the latest blockbuster! Released in 2024.</p>
-        </article>
-        <article>
-            <h3>The Great Sequel</h3>
-            <img src="great_sequel.jpg" alt="The Great Sequel Poster" width="200">
-            <p>Continue the journey in this amazing sequel. Released in 2024.</p>
-        </article>
+
+    <section id="sports-cars">
+        <h2>Sports Cars</h2>
+        <figure>
+            <img src="sports_car.jpg" alt="Red Sports Car">
+            <figcaption>Red Sports Car - Fast and Furious!</figcaption>
+        </figure>
+        <p>Explore our collection of high performance sports cars. Known for their aesthetics and speed.</p>
     </section>
 
-    <section id="classics">
-        <h2>Classic Movies</h2>
+    <section id="suv">
+        <h2>SUVs</h2>
+        <figure>
+            <img src="suv.jpg" alt="Luxury SUV">
+            <figcaption>Luxury SUV - Spacious and Comfortable</figcaption>
+        </figure>
+        <p>Discover our range of SUVs which combine luxury and utility for a comfortable driving experience.</p>
+    </section>
+
+    <section id="classic-cars">
+        <h2>Classic Cars</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Title</th>
+                    <th>Model</th>
                     <th>Year</th>
-                    <th>Director</th>
+                    <th>Color</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>The Timeless Classic</td>
-                    <td>1985</td>
-                    <td>John Doe</td>
+                    <td>1957 Chevrolet Bel Air</td>
+                    <td>1957</td>
+                    <td>Red</td>
                 </tr>
                 <tr>
-                    <td>Another Classic</td>
-                    <td>1973</td>
-                    <td>Jane Smith</td>
+                    <td>1966 Ford Mustang</td>
+                    <td>1966</td>
+                    <td>Blue</td>
                 </tr>
             </tbody>
         </table>
     </section>
 
-    <section id="submit-movie">
-        <h2>Submit a Movie</h2>
-        <form action="/submit_movie" method="post">
-            <label for="movie-name">Movie Name:</label>
-            <input type="text" id="movie-name" name="movie-name" required><br><br>
-            <label for="release-year">Release Year:</label>
-            <input type="number" id="release-year" name="release-year" required><br><br>
-            <label for="director">Director:</label>
-            <input type="text" id="director" name="director"><br><br>
-            <input type="submit" value="Submit Movie">
-        </form>
-    </section>
-
     <footer>
-        <p>Contact us at <a href="mailto:contact@moviehub.com">contact@moviehub.com</a>.</p>
+        <p>Contact us at <a href="mailto:sales@carshowcase.com">sales@carshowcase.com</a>.</p>
     </footer>
 </body>
 </html>
