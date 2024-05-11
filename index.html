@@ -1,1 +1,76 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hub</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Movie Hub!</h1>
+        <nav>
+            <ul>
+                <li><a href="#new-releases">New Releases</a></li>
+                <li><a href="#classics">Classics</a></li>
+                <li><a href="#submit-movie">Submit a Movie</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="new-releases">
+        <h2>New Releases</h2>
+        <article>
+            <h3>The Marvelous Movie</h3>
+            <img src="marvelous_movie.jpg" alt="The Marvelous Movie Poster" width="200">
+            <p>This is the latest blockbuster! Released in 2024.</p>
+        </article>
+        <article>
+            <h3>The Great Sequel</h3>
+            <img src="great_sequel.jpg" alt="The Great Sequel Poster" width="200">
+            <p>Continue the journey in this amazing sequel. Released in 2024.</p>
+        </article>
+    </section>
+
+    <section id="classics">
+        <h2>Classic Movies</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Director</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Timeless Classic</td>
+                    <td>1985</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <td>Another Classic</td>
+                    <td>1973</td>
+                    <td>Jane Smith</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="submit-movie">
+        <h2>Submit a Movie</h2>
+        <form action="/submit_movie" method="post">
+            <label for="movie-name">Movie Name:</label>
+            <input type="text" id="movie-name" name="movie-name" required><br><br>
+            <label for="release-year">Release Year:</label>
+            <input type="number" id="release-year" name="release-year" required><br><br>
+            <label for="director">Director:</label>
+            <input type="text" id="director" name="director"><br><br>
+            <input type="submit" value="Submit Movie">
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us at <a href="mailto:contact@moviehub.com">contact@moviehub.com</a>.</p>
+    </footer>
+</body>
+</html>
