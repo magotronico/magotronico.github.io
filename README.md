@@ -1,0 +1,2 @@
+# VA_AD24
+This repository hosts a static page that showcases the projects of all students. Mentors and students can use this space to display their work, share links to their projects, and collaborate. Feel free to explore the different branches, view the project links, and contribute to the repository. This is a collaborative environment designed to highlight student achievements and foster learning.
