@@ -3,78 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome to the Repo!</title>
+    <title>Programación VA AD24</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset and base styles */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            box-sizing: border-box;
         }
 
-        header {
-            background-color: #4CAF50;
-            padding: 20px;
-            text-align: center;
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #7912a9;
             color: white;
-        }
-
-        h1, h2 {
-            margin: 0;
-        }
-
-        .container {
-            padding: 20px;
             text-align: center;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        .team {
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background-color: #8b54b1;
+            padding: 1rem;
+            border-radius: 15px;
+            display: inline-block;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #ecf0f1;
+        }
+
+        /* Gallery Container */
+        .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 2100px;
+            margin: 0 auto;
         }
 
-        .team-member {
-            background-color: #fff;
+        /* Game Card Styles */
+        .game-card {
+            background-color: white;
             border-radius: 10px;
-            margin: 15px;
-            padding: 20px;
-            width: 300px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            width: 400px;
+            text-align: center;
         }
 
-        .team-member img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
+        .game-card:hover {
+            transform: scale(1.02);
         }
 
-        .team-member h3 {
-            margin-top: 10px;
-            color: #4CAF50;
-        }
-
-        .team-member p {
-            font-size: 14px;
-            margin: 10px 0;
-        }
-
-        .team-member a {
-            display: inline-block;
-            text-decoration: none;
-            padding: 10px 20px;
-            background-color: #4CAF50;
+        .game-card-header {
+            background-color: #317ee4;
             color: white;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            padding: 1rem;
         }
 
-        .team-member a:hover {
-            background-color: #45a049;
+        .game-card-header h2 {
+            font-size: 1.3rem;
         }
 
+        .game-card-header p {
+            font-size: 0.9rem;
+            color: #ecf0f1;
+        }
+
+        .game-iframe-container {
+            padding: 1rem;
+            background-color: #f7f9fa;
+        }
+
+        .game-iframe-container iframe {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .game-card {
+                max-width: 90%;
+            }
+        }
+        
         footer {
             background-color: #333;
             padding: 10px;
@@ -87,46 +117,66 @@
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Projectos: Juegos de Scratch</h1>
+        <h2>Projectos creativos desarrollados por jovenes programadores.</h2>
+        <p>Demostración pública donde los niños mostrarán los videojuegos y proyectos interactivos que desarrollaron durante el curso. Los asistentes podrán jugar y explorar estas creaciones mientras los niños explican su diseño y funcionamiento.
+        </p>
+    </div>
 
-<header>
-    <h1>Welcome to Our Repo!</h1>
-    <h2>Meet Our Team</h2>
-</header>
-
-<div class="container">
-    <p>We are excited to have you here! Below you will find a presentation of the amazing people who contribute to this repository. You can also visit their personal webpages to check a project they built.</p>
-
-    <div class="team">
-        <!-- First Team Member -->
-        <div class="team-member">
-            <img src="Resources\Images\ProfilePicture\Dilan.jpeg" alt="Dilan Photo">
-            <h3>Dilan Castañeda</h3>
-            <p>Lead Developer, specializes in full-stack development and AI integration. Passionate about software automation solutions and magic.</p>
-            <a href="dilan_game.html" target="_blank">Cups and Balls Game</a>
+    <div class="gallery">
+        <div class="game-card">
+            <div class="game-card-header">
+                <h2>Cat Jump</h2>
+                <p>Creado por Angel Martinez | Mentor: Dario Estrada</p>
+            </div>
+            <div class="game-iframe-container">
+                <iframe src="https://scratch.mit.edu/projects/1107536228/embed" allowtransparency="true" width="350" height="302" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
         </div>
 
-       <!-- Third Team Member -->
-        <div class="team-member">
-            <img src="Resources\Images\ProfilePicture\Mayra.jpeg" alt="Mayra Photo">
-            <h3>Mayra Gpomez</h3>
-            <p>Physical engineer, I love the gym.</p>
-            <a href="mayra_page.html" target="_blank">Mayra´s page</a>
-
+        <div class="game-card">
+            <div class="game-card-header">
+                <h2>Frutas</h2>
+                <p>Creado por Abril Treviño | Mentor: Dario Estrada</p>
+            </div>
+            <div class="game-iframe-container">
+                <iframe src="https://scratch.mit.edu/projects/1107538168/embed" allowtransparency="true" width="350" height="302" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
         </div>
 
-        <!-- Fifth Team Member -->
-        <div class="team-member">
-            <img src="Resources\Images\ProfilePicture\Dario_photo.jpg" alt="Dario Photo">
-            <h3>Dario Estrada</h3>
-            <p>Mechatronic Engineer and Programing Tutor in Vamos Alto. Loves soccer and dogs.</p>
-            <a href="Dario_game.html" target="_blank">Visit Dario's Game</a>
+        <div class="game-card">
+            <div class="game-card-header">
+                <h2>Messi vs CR7</h2>
+                <p>Creado por Damian Valdez | Mentor: Dario Estrada</p>
+            </div>
+            <div class="game-iframe-container">
+                <iframe src="https://scratch.mit.edu/projects/1107539636/embed" allowtransparency="true" width="350" height="302" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <div class="game-card-header">
+                <h2>Trampolín</h2>
+                <p>Creado por Tadeo Reyes | Mentor: Dario Estrada</p>
+            </div>
+            <div class="game-iframe-container">
+                <iframe src="https://scratch.mit.edu/projects/1107550776/embed" allowtransparency="true" width="350" height="302" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <div class="game-card-header">
+                <h2>Perro Espacial</h2>
+                <p>Creado por Iker Gallegos | Mentor: Dario Estrada</p>
+            </div>
+            <div class="game-iframe-container">
+                <iframe src="https://scratch.mit.edu/projects/1107555759/embed" allowtransparency="true" width="350" height="302" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
-</div>
-
+</body>
 <footer>
     <p>&copy; 2024 Academia de Física y Programación. All rights reserved.</p>
 </footer>
-
-</body>
 </html>
